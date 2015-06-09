@@ -5,6 +5,10 @@ public class RectangleAverager {
 
     public float averageArea(Rectangle[] rectangles) {
         this.rectangles = rectangles;
-        return 0;
+        int sumOfAllTheAreas = 0;
+        for(Rectangle rectangle : rectangles){
+            sumOfAllTheAreas += rectangle.getArea();
+        }
+        return sumOfAllTheAreas/rectangles.length;
     }
 }
