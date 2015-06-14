@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         int sumOfOddNumbers = 0;
         for(int index = STARTING_ODD_VALUE; index < ENDING_VALUE; index += 2){
-            System.out.print("Current odd number being added: " + index);
+            System.out.println(index);
             sumOfOddNumbers += index;
         }
         System.out.println("The sum of the odd numbers is: " + sumOfOddNumbers);

@@ -17,7 +17,6 @@ public class GuessingGame {
     }
 
     public void playGame(){
-        System.out.println("The number to guess: "+ randomNumberToGuess);
         while(guessANumber(grabAGuessFromUser()) != ResultOfGuess.EXACT){}
         System.out.println("End of game");
     }
